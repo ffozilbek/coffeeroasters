@@ -62,8 +62,6 @@ html {
 body {
     height: 100%;
     display: flex;
-    padding: 0;
-    margin: 0;
     font-size: 16px;
     line-height: normal;
     font-family: "Roboto","Arial",sans-serif;
@@ -80,12 +78,31 @@ img {
 
 /* CONTAINER */
 .container {
-    max-width: 1440px;
     width: 100%;
+    max-width: 1440px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button {
+    padding: 16px 24px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--light-color);
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-green {
+    background-color: var(--bg-three);
 }
 
 /* SITE HEADER */
@@ -121,4 +138,33 @@ img {
 .navbar-link:hover {
     color: var(--bg-three);
     opacity: 0.8;
+}
+
+/* SITE HERO */
+.hero-container {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+.hero-info-wrapper {
+    width: 730px;
+    padding-top: 116px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 116px;
+}
+.hero-heading {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.hero-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+.hero-img {
+    width: 710px;
+    height: 696px;
 }
