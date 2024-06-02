@@ -69,7 +69,7 @@ body {
     font-family: "Roboto","Arial",sans-serif;
     flex-direction: column;
     background-color: #fff;
-    color: #222;
+    color: #000;
 }
 
 img {
@@ -89,3 +89,36 @@ img {
 }
 
 /* SITE HEADER */
+.header-hero-wrapper {
+    background-image: url("../img/home-hero-bg.jpg");
+}
+.header-container {
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    flex-shrink: 0;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+}
+.navbar-list:not(:last-child) {
+    margin-right: 40px;
+}
+.navbar-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--font-color);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+.navbar-link:hover {
+    color: var(--bg-three);
+    opacity: 0.8;
+}
