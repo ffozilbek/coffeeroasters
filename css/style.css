@@ -55,7 +55,7 @@ html {
 }
 
 *:focus {
-    outline: 3px double var(--bg-three);
+    outline: 4px double var(--bg-three);
     outline-offset: 3px;
 }
 
@@ -95,6 +95,7 @@ img {
     color:var(--light-color);
     display: inline-block;
     transition: opacity 0.3s ease;
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -103,6 +104,10 @@ img {
 
 .button-green {
     background-color: var(--bg-three);
+}
+
+.button-orange {
+    background-color: var(--bg-five);
 }
 
 main {
@@ -227,13 +232,12 @@ main {
 
 /* FEATURES */
 .features-wrapper {
-    height: 912px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .features {
-    height: 700px;
-    background-color: var(--bg-five);
     background-image: url("../img/features-bg.jpg");
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
     padding: 50px 30px;
 }
 .features-heading {
@@ -254,9 +258,11 @@ main {
 }
 .features-cards {
     display: flex;
+    flex-wrap: wrap;
 }
 .feature-card {
     width: 433px;
+    margin-bottom: 30px;
 }
 .feature-card:not(:last-child) {
     margin-right: 20px;
@@ -271,12 +277,15 @@ main {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    color:var(--font-color);
 }
 .card-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     padding-right: 56px;
+    color:var(--font-color);
 }
 
 /* HOW IT WORKS */
@@ -358,6 +367,41 @@ main {
     outline: 4px double var(--bg-five);
 }
 
+/* FOOTER */
+.footer {
+    padding: 68px 50px;
+    background-color: var(--bg-one);
+    background-image: url("../img/home-hero-bg.jpg");
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-media-list {
+    display: flex;
+    list-style: none;
+}
+.social-media-item:not(:last-child) {
+    margin-right: 30px;
+}
+.media-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.facebook-icon {
+    background-image: url("../img/facebook-icon.svg");
+}
+.twitter-icon {
+    background-image: url("../img/twitter-icon.svg");
+}
+.instagram-icon {
+    background-image: url("../img/instagram-icon.svg");
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -376,5 +420,13 @@ only screen and (                min-resolution: 2dppx) {
 
     .features {
         background-image: url("../img/features-bg@2x.jpg");
+    }
+
+    .how-it-works {
+        background-image: url("../img/hitw-bg@2x.jpg")
+    }
+
+    .footer {
+        background-image: url("../img/home-hero-bg@2x.jpg")
     }
 }
