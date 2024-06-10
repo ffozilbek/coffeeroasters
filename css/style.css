@@ -174,13 +174,23 @@ main {
     line-height: 24px;
     margin-bottom: 34px;
 }
+.hero-img-wrapper {
+    position: relative;
+}
 .hero-img {
     width: 710px;
     height: 696px;
 }
+.hero-stiker {
+    position: absolute;
+    top: -60px;
+    left: -100px;
+}
+
 
 /* SITE MAIN */
 .main {
+    position: relative;
     padding: 20px 0px 50px 0px;
 }
 .collection-wrapper {
@@ -229,6 +239,21 @@ main {
     font-weight: 400;
     line-height: 34px;
 }
+.left-top-pattern {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.right-mid-pattern {
+    position: absolute;
+    top: 705px;
+    right: 0;
+}
+.left-bottom-pattern {
+    position: absolute;
+    top: 1280px;
+    left: 0;
+}
 
 /* FEATURES */
 .features-wrapper {
@@ -256,9 +281,17 @@ main {
     margin: auto;
     margin-bottom: 80px;
 }
+.features-stiker {
+    position: absolute;
+    width: 140px;
+    height: 144px;
+    top: -50px;
+    left: -50px;
+}
 .features-cards {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 .feature-card {
     width: 433px;
@@ -294,6 +327,14 @@ main {
     background-image: url("../img/hitw-bg.jpg");
     color: var(--font-color);
     padding: 50px 30px;
+    position: relative;
+}
+.hitw-stiker {
+    position: absolute;
+    width: 192px;
+    height: auto;
+    top: 42px;
+    right: 68px;
 }
 .how-it-works-heading {
     text-align: center;
